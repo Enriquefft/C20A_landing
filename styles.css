@@ -1,0 +1,53 @@
+:root {
+  --main-bg-color: #dcf2f8;
+  --blue-button-color: #1c98ed;
+  --black-color: #000000;
+}
+
+body {
+  display: grid;
+  text-align: center;
+}
+
+#user-form {
+  display: grid;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.input-box {
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.input-box::placeholder {
+  text-align: center;
+}
+
+.blue-box {
+  background-color: var(--blue-button-color);
+}
+
+.black-box {
+  background-color: var(--black-color);
+}
+.blue-box::placeholder {
+  color: black;
+}
+.black-box::placeholder {
+  color: white;
+}
+
+/*submit*/
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
