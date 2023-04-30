@@ -36,16 +36,22 @@
         class="input-box blue-box"
         type="text"
         placeholder="Correo"
+        required
       />
       <select id="ciclo-select" name="Ciclo" class="input-box blue-box">
-        <option value="" selected>Ciclo</option>
+        <option value="ciclo" selected>Ciclo</option>
         <option value="volvo">eins</option>
         <option value="saab">swei</option>
-        <option value="fiat" selected>drei</option>
+        <option value="fiat">drei</option>
         <option value="audi">Audi</option>
       </select>
 
-      <input list="list" class="input-box blue-box" name="browser" />
+      <input
+        list="list"
+        class="input-box blue-box"
+        name="browser"
+        placeholder="Ciclo"
+      />
       <datalist id="list">
         <!-- <option value="" disabled selected>Ciclo</option> -->
         <option value="volvo">eins</option>
