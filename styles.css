@@ -3,7 +3,6 @@
   --blue-button-color: #1c98ed;
   --black-color: #000000;
   min-height: 100%;
-  position: relative;
   font-family: "alta";
 }
 
@@ -17,6 +16,7 @@ body {
   display: grid;
   text-align: center;
   background-color: var(--main-bg-color);
+  position: relative;
 }
 
 #banner {
@@ -33,6 +33,9 @@ h1,
 h4 {
   color: var(--black-color);
 }
+#content-wrap {
+  padding-bottom: 4rem;
+}
 
 h1 {
   font-size: 2rem;
@@ -41,14 +44,14 @@ h1 {
   padding: 0;
 }
 
-h2 {
+h4 {
   max-width: 50ch;
+  padding: 0 3rem;
 }
 
 #user-form {
   display: grid;
   justify-content: space-around;
-  margin-bottom: 2rem;
 }
 
 footer {
@@ -67,6 +70,7 @@ footer {
   margin: 0.5rem 0;
   border: none;
   padding: 0.5rem 1rem;
+  font-size: 1.4rem;
 }
 
 .input-box::placeholder {
@@ -75,10 +79,12 @@ footer {
 
 .blue-box {
   background-color: var(--blue-button-color);
+  color: black;
 }
 
 .black-box {
   background-color: var(--black-color);
+  color: white;
 }
 .blue-box::placeholder {
   color: black;

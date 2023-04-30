@@ -9,59 +9,62 @@
     <script src="scripts.js"></script>
   </head>
   <body>
-    <img id="banner" src="assets/banner.png" alt="banner" />
-    <h1>C20Academy</h1>
-    <h4>
-      ¿Quieres aprender a organizarte, cumplir y no dejar al útlimo tus tareas?X
-    </h4>
-    <form
-      id="user-form"
-      method="POST"
-      action="https://script.google.com/macros/s/AKfycbzBdjEsQ6n_O7zwbiwmmZiTW6YZqcqbbqRJif-VL57Poy686VUFLJUGvE6hpP6esles/exec"
-    >
-      <input
-        name="Nombres"
-        class="input-box blue-box"
-        type="text"
-        placeholder="Nombres"
-        required
-      />
-      <input
-        name="Apellidos"
-        class="input-box black-box"
-        type="text"
-        placeholder="Apellidos"
-      />
-      <input
-        name="Correo"
-        class="input-box blue-box"
-        type="email"
-        placeholder="Correo"
-        required
-      />
-      <select id="ciclo-select" name="Ciclo" class="input-box blue-box">
-        <option value="ciclo" selected disabled>Ciclo</option>
-        <option value="volvo">eins</option>
-        <option value="saab">swei</option>
-        <option value="fiat">drei</option>
-        <option value="audi">Audi</option>
-      </select>
+    <div id="content-wrap">
+      <img id="banner" src="assets/banner.png" alt="banner" />
+      <h1>C20Academy</h1>
+      <h4>
+        ¿Quieres aprender a organizarte, cumplir y no dejar al útlimo tus
+        tareas?X
+      </h4>
+      <form
+        id="user-form"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzBdjEsQ6n_O7zwbiwmmZiTW6YZqcqbbqRJif-VL57Poy686VUFLJUGvE6hpP6esles/exec"
+      >
+        <input
+          name="Nombres"
+          class="input-box blue-box"
+          type="text"
+          placeholder="Nombres"
+          required
+        />
+        <input
+          name="Apellidos"
+          class="input-box black-box"
+          type="text"
+          placeholder="Apellidos"
+        />
+        <input
+          name="Correo"
+          class="input-box blue-box"
+          type="email"
+          placeholder="Correo"
+          required
+        />
+        <select id="ciclo-select" name="Ciclo" class="input-box black-box">
+          <option value="ciclo" selected disabled>Ciclo</option>
+          <option value="volvo">eins</option>
+          <option value="saab">swei</option>
+          <option value="fiat">drei</option>
+          <option value="audi">Audi</option>
+        </select>
 
-      <!-- <input -->
-      <!--   list="list" -->
-      <!--   class="input-box blue-box" -->
-      <!--   name="browser" -->
-      <!--   placeholder="Ciclo" -->
-      <!-- /> -->
-      <!-- <datalist id="list"> -->
-      <!--   <option value="volvo">eins</option> -->
-      <!--   <option value="saab">swei</option> -->
-      <!--   <option value="fiat" selected>drei</option> -->
-      <!--   <option value="audi">Audi</option> -->
-      <!-- </datalist> -->
+        <!-- <input -->
+        <!--   list="list" -->
+        <!--   class="input-box blue-box" -->
+        <!--   name="browser" -->
+        <!--   placeholder="Ciclo" -->
+        <!-- /> -->
+        <!-- <datalist id="list"> -->
+        <!--   <option value="volvo">eins</option> -->
+        <!--   <option value="saab">swei</option> -->
+        <!--   <option value="fiat" selected>drei</option> -->
+        <!--   <option value="audi">Audi</option> -->
+        <!-- </datalist> -->
 
-      <input class="input-box" type="submit" value="Enviar" />
-    </form>
+        <input class="input-box" type="submit" value="Enviar" />
+      </form>
+    </div>
     <footer>
       <a href="https://www.facebook.com/C20Academy-109554354477763/">
         <img class="footer-icons" src="assets/2021_Facebook_icon.svg.png" />
