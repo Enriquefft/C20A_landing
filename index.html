@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/C20A LOGO.png" />
+    <script src="scripts.js"></script>
   </head>
   <body>
     <img id="banner" src="assets/banner.png" alt="banner" />
@@ -34,31 +35,30 @@
       <input
         name="Correo"
         class="input-box blue-box"
-        type="text"
+        type="email"
         placeholder="Correo"
         required
       />
       <select id="ciclo-select" name="Ciclo" class="input-box blue-box">
-        <option value="ciclo" selected>Ciclo</option>
+        <option value="ciclo" selected disabled>Ciclo</option>
         <option value="volvo">eins</option>
         <option value="saab">swei</option>
         <option value="fiat">drei</option>
         <option value="audi">Audi</option>
       </select>
 
-      <input
-        list="list"
-        class="input-box blue-box"
-        name="browser"
-        placeholder="Ciclo"
-      />
-      <datalist id="list">
-        <!-- <option value="" disabled selected>Ciclo</option> -->
-        <option value="volvo">eins</option>
-        <option value="saab">swei</option>
-        <option value="fiat" selected>drei</option>
-        <option value="audi">Audi</option>
-      </datalist>
+      <!-- <input -->
+      <!--   list="list" -->
+      <!--   class="input-box blue-box" -->
+      <!--   name="browser" -->
+      <!--   placeholder="Ciclo" -->
+      <!-- /> -->
+      <!-- <datalist id="list"> -->
+      <!--   <option value="volvo">eins</option> -->
+      <!--   <option value="saab">swei</option> -->
+      <!--   <option value="fiat" selected>drei</option> -->
+      <!--   <option value="audi">Audi</option> -->
+      <!-- </datalist> -->
 
       <input class="input-box" type="submit" value="Enviar" />
     </form>
