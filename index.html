@@ -13,11 +13,47 @@
     <h4>
       ¿Quieres aprender a organizarte, cumplir y no dejar al útlimo tus tareas?X
     </h4>
-    <form id="user-form">
-      <input class="input-box blue-box" type="text" placeholder="Nombres" />
-      <input class="input-box black-box" type="text" placeholder="Carrera" />
-      <input class="input-box blue-box" type="text" placeholder="Teléfono" />
-      <input class="input-box black-box" type="email" placeholder="Correo" />
+    <form
+      id="user-form"
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbzBdjEsQ6n_O7zwbiwmmZiTW6YZqcqbbqRJif-VL57Poy686VUFLJUGvE6hpP6esles/exec"
+    >
+      <input
+        name="Nombres"
+        class="input-box blue-box"
+        type="text"
+        placeholder="Nombres"
+        required
+      />
+      <input
+        name="Apellidos"
+        class="input-box black-box"
+        type="text"
+        placeholder="Apellidos"
+      />
+      <input
+        name="Correo"
+        class="input-box blue-box"
+        type="text"
+        placeholder="Correo"
+      />
+      <select id="ciclo-select" name="Ciclo" class="input-box blue-box">
+        <option value="" selected>Ciclo</option>
+        <option value="volvo">eins</option>
+        <option value="saab">swei</option>
+        <option value="fiat" selected>drei</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <input list="list" class="input-box blue-box" name="browser" />
+      <datalist id="list">
+        <!-- <option value="" disabled selected>Ciclo</option> -->
+        <option value="volvo">eins</option>
+        <option value="saab">swei</option>
+        <option value="fiat" selected>drei</option>
+        <option value="audi">Audi</option>
+      </datalist>
+
       <input class="input-box" type="submit" value="Enviar" />
     </form>
     <footer>
