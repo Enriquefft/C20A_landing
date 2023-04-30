@@ -5,14 +5,44 @@
 }
 
 body {
+  margin: 0;
   display: grid;
   text-align: center;
+  /*very small margin*/
+  background-color: var(--main-bg-color);
+}
+
+#banner {
+  height: 20vh;
+}
+
+h1,
+h4 {
+  font-size: auto;
+  font-family: "Roboto", sans-serif;
+  color: var(--black-color);
+  /* padding: 1%; */
+  margin: 0;
+}
+h1 {
+  height: 10vh;
+}
+h4 {
+  height: 10vh;
 }
 
 #user-form {
   display: grid;
-  grid-gap: 10px;
-  margin: 10px;
+  height: 50vh;
+}
+
+footer {
+  background-color: var(--black-color);
+  color: var(--main-bg-color);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-box {
@@ -50,4 +80,13 @@ input[type="submit"] {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
+}
+
+.footer-icons {
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--black-color);
+  color: var(--main-bg-color);
 }
