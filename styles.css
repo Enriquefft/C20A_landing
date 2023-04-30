@@ -32,9 +32,12 @@ body {
 h1,
 h4 {
   color: var(--black-color);
+  /*center horizontally*/
+  text-align: center;
 }
 #content-wrap {
   padding-bottom: 4rem;
+  text-align: center;
 }
 
 h1 {
@@ -45,8 +48,9 @@ h1 {
 }
 
 h4 {
-  max-width: 50ch;
-  padding: 0 3rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-size: 1.2rem;
 }
 
 #user-form {
