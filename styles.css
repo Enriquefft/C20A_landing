@@ -2,6 +2,8 @@
   --main-bg-color: #dcf2f8;
   --blue-button-color: #1c98ed;
   --black-color: #000000;
+  --action-left: #000000;
+  --action-right: #3731ca;
   min-height: 100%;
   font-family: "alta";
 }
@@ -100,9 +102,18 @@ footer {
 /*submit*/
 input[type="submit"] {
   border: none;
-  color: black;
+  color: white;
   text-decoration: none;
-  background-color: transparent;
+  cursor: pointer;
+  /*thicc font*/
+  font-weight: 1000;
+
+  /* gradient action-left to action-right*/
+  background-image: linear-gradient(
+    to right,
+    var(--action-left),
+    var(--action-right)
+  );
 }
 
 .footer-icons {
