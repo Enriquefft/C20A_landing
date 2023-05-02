@@ -9,6 +9,15 @@ window.addEventListener("load", function () {
     }
 
     const data = new FormData(form);
+
+    const mail = data.get("Correo");
+    console.log(mail);
+
+    if (!mail.includes("@utec.edu.pe")) {
+      alert("Correo no valido");
+      return;
+    }
+
     const action = e.target.action;
     fetch(action, {
       method: "POST",
@@ -22,7 +31,6 @@ window.addEventListener("load", function () {
 });
 
 // Only allow 1 succesfull post
-// save boolean in localStorage
 function succesfullSubmit() {
   localStorage.setItem("succesfullSubmit", true);
 }
