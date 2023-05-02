@@ -3,15 +3,14 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // if (succesfullSubmitExists()) {
-    //   alert("Ya llenaste este formulario!");
-    //   return;
-    // }
+    if (succesfullSubmitExists()) {
+      alert("Ya llenaste este formulario!");
+      return;
+    }
+
     const data = new FormData(form);
 
     const mail = data.get("Correo");
-    console.log(mail);
-    console.log(data.get("Ciclo"));
 
     if (!mail.includes("@utec.edu.pe")) {
       alert("Correo no valido");
