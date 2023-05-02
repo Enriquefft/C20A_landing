@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     e.preventDefault();
 
     if (succesfullSubmitExists()) {
-      alert("You already submitted!");
+      alert("Ya llenaste este formulario!");
       return;
     }
 
@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
     })
       .then(() => {
         localStorage.setItem("succesfullSubmit", true);
-        alert("Success!");
+        alert("Gracias futuro 20ador!");
       });
   });
 });
